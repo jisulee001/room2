@@ -1,129 +1,314 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>room</title>
-	<meta charset = "utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Dokdo|Nanum+Pen+Script|Noto+Serif+KR&amp;subset=korean" rel="stylesheet"> 
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>room</title>
+		<meta charset = "utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Dokdo|Nanum+Pen+Script|Noto+Serif+KR&amp;subset=korean" rel="stylesheet"> 
 
-<style>
-body{margin:0;}
+	<style>
+	body{margin:0;}
 
-#container1 {width:1400px; height:12000px; position:relative; mix-blend-mode:multiply; }
-#container1_1 {opacity: 0; animation: dissolve 2s forwards paused;}
-#container1_2 {opacity: 0; animation: dissolve 2s forwards paused;}
-#container1_3 {opacity: 0; animation: dissolve 2s forwards paused;}
-#container1_4 {opacity: 0; animation: dissolve 2s forwards paused;}
-#container1_5 {opacity: 0; animation: dissolve 2s forwards paused;}
+	#container1 {width:1410px; height:12000px; position:relative; mix-blend-mode:multiply; margin:auto;}
+	#container1_1 {opacity: 0; animation: dissolve 2s forwards paused;}
+	#container1_2 {opacity: 0; animation: dissolve 2s forwards paused;}
+	#container1_3 {opacity: 0; animation: dissolve 2s forwards paused;}
+	#container1_4 {opacity: 0; animation: dissolve 2s forwards paused;}
+	#container1_5 {opacity: 0; animation: dissolve 2s forwards paused;}
+	#container2 {width:1410px; height:19500px; position:relative;overflow:hidden; margin:auto;}
+	#container3 {width:1410px; height:9500px; position:relative; overflow:hidden; margin: auto;}
+	#container4 {width:1410px; height:16000px; position:relative; overflow:hidden; margin:auto;}
 
-#moniter {width:200px; height:100px; background-color:red; position:fixed; z-index:10; left:1200px; top:0; text-align:center; font-size:3em;}
+	.comic{border : 3px solid black;}
+	.FB {border:5px solid black;}
+	.baby { font-family:'Nanum Pen Script', cursive; font-size:55px; letter-spacing:1.5px;}
+	.lh100{line-height:100px;}
+	.lh80{line-height:80px;}
+	.texteffect{font-family:'Noto Serif KR', cursive; font-size:60px; letter-spacing:1px;}
+	.mom {font-family:'Noto Serif KR', cursive; font-size:35px; letter-spacing:1px;}
+	.lh60{line-height:60px;}
 
-@keyframes dissolve {
-	100%{opacity:1;}
-}
+	.roundedF{border-radius:50%;}
+	.roundedM{border-radius:20%;}
 
-</style>
-</head>
-<body>
-	<img src ="c0.jpg" id = "preimage" style = "width:1400px; position: relative; z-index:5;" >
-<div id = "moniter"></div>
-<div id = "container1">
-	<div id = "container1_1">
-		<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; 
-					position:absolute; top:140px; left:200px; line-height:90px; 
-					letter-spacing: 1.5px;" >
-			옛날 옛적에 내가 세상에 나오기 전 엄마는 계속 울었다.<br>
-			엄마는 계속 TV만 봤다.</h1>
-		<img src ="c1.jpg" style = "width:1000px; border : 5px black solid; position: absolute; top:500px; left:20px; z-index:5;">
-		<img src = "c2.jpg" style = "width:700px; border:5px black solid; position: absolute; top:1100px;
-									right:20px;">
-		<img src = "c3.jpg"  style = "width:1400px; position: absolute; z-index:5; top:1400px;">
+
+	#moniter {width:200px; height:100px; background-color:red; position:fixed; z-index:10; right:0px; top:0; text-align:center; font-size:3em;}
+
+	@keyframes dissolve {
+		100%{opacity:1;}
+	}
+
+	</style>
+	</head>
+	<body>
+	<div id = "moniter"></div>
+
+	<!---시작화면--->
+	<img src ="c0.jpg" id = "preimage" style = "width:1400px; position: relative; display:block; margin-bottom:200px; margin:auto;" >
+
+	<!---본 이미지 시작--->
+	<!---제 1막 --->
+	<div id = "container1">
+		<div id = "container1_1">
+			<h1 class ="baby lh100" style = "position:absolute; top:140px; left:200px;  " >
+				옛날 옛적에 내가 세상에 나오기 전 엄마는 계속 울었다.<br>
+				엄마는 계속 TV만 봤다.</h1>
+			<img src ="c1.jpg" class = "comic" style = "width:1000px; position: absolute; top:500px; left:20px; z-index:5;">
+			<img src = "c2.jpg" class = "comic"  style = "width:700px; ; position: absolute; top:1100px;
+										right:20px;">
+			<img src = "c3.jpg" class = "comic" style = "width:1400px; position: absolute; z-index:5; top:1400px;">
+		</div>
+		<div id = "container1_2">
+			<h1 class = "baby lh100" style = " position:absolute; top:2300px; left:200px; ">
+						내가 천국에서 내려왔다. 천장을 따라.<br>
+						내가 엄마 몸 안에서 발로 차고는 담요 안에서 불쑥 튀어나와<br>
+						마침내 눈을 떴다.<br></h1>
+			<img src = "c4_2.jpg" class = "comic" style = "width:700px; position: absolute; z-index:5; top:2800px; right:20px;
+											;">
+			<img src = "c5_2.jpg" class = "comic" style = "width:1350px; position: absolute; z-index:5; top:3100px; left:20px; 
+											;">		
+			<h1 class = "baby lh100" style = " position:absolute; top:3450px; left:300px; z-index:10; background-color:white; ">
+						그 때 엄마가 탯줄을 자르고는 내게 말했다.<br>
+						"안녕, 잭"</h1>
+			<img src = "c6.jpg" class = "comic" style = "width:655px; position:absolute; z-index:5; top:3950px;  left:20px;">
+			<img src = "c6_2.jpg" class = "comic" style = "width:655px; position:absolute; z-index:5; top:3950px;  left:700px;">
+			<img src = "c6_3.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:4400px; ">
+			<div class = "FB roundedF" style = "width:500px; height:200px; background-color:white; position:absolute; top:4700px; left:100px; text-align:center; line-height:200px; z-index:10; ">
+				<h1 class = "baby" >
+						 엄마 나 이제 5살이야!</h1></div>
+		</div>
+		<div id = "container1_3">
+			<img src = "c6_4.jpg"  class = "comic" style = "width:1400px; position:absolute; z-index:5; top:5220px; ">	
+			<img src = "c7.jpg" class = "comic" style = "width:690px; position:absolute; z-index:5; top:6100px; ">	
+			<img src = "c8.jpg" class = "comic"v style = "width:690px; position:absolute; z-index:5; top:6100px; left:710px; ">		
+			<img src = "c10_2.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:6550px; ">
+			<img src = "c9.jpg" class = "comic" style = "width:900px; position:absolute; z-index:5; top:7400px;  right:0px;">
+		</div>
+		<div id = "container1_4">
+			 <h1 class= "baby" style = "position:absolute; top:7600px; left:50px; z-index:10; background-color:white; ">
+						"...양초는?"</h1>
+			 <h1 class = "mom " style = " position:absolute; top:7700px; left:50px; z-index:10; ">
+						"우리한테 양초는 없는거 알잖니"</h1>
+			<img src = "c11_3.jpg" class = "comic" style = "width:495px; position:absolute; z-index:5; top:8350px;  left:0px;">
+			<img src = "c12.jpg" class = "comic"  style = "width:865px; position:absolute; z-index:5; top:8350px;  right:0px;">
+			<div  class = "roundedF"style = "width:900px; height:300px; background-color:white; position:absolute; top:8000px; left:300px; text-align:center; filter:drop-shadow(5px 5px 0 grey);  ">
+				<h1 class= "baby lh80 "style = "position:absolute; top:50px; left:50px; ">
+						 엄마가 진짜 생일 케이크 만들어 준다고 했잖아!<br> 그럼 불이 있어야지! </h1></div>
+			<div class = "FB roundedF" style = "width:500px; height:200px; background-color:white; position:absolute; top:8750px; right:300px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60"style = "position:absolute; top:20px;left:50px; ">
+						 잭. 양초 없어도 생일케이크<br>라는건 변하지 않아</h1></div>
+			<div class = "FB roundedF" style = "width:500px; height:200px; background-color:white; position:absolute; top:8900px; right:0px; text-align:center; z-index:10; ">
+				<h1 class="mom lh60" style = "position:absolute; top:20px;left:80px; ">
+						 그냥 이대로 생일 축하<br>하면 안될까?</h1></div>
+			<div class = "roundedF" style = "width:800px; height:300px; background-color:white; position:absolute; top:9100px; left:300px; text-align:center; filter:drop-shadow(8px 8px 10px gray); line-height:150px; ">
+				<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:120px;">
+						 싫 어!!</h1></div>
+		</div>
+		<div id = "container1_5">
+			<img src = "c12_2.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:9500px; ">
+			<h1 class = "mom" style = " position:absolute; top:10400px; left:600px; z-index:10; ">
+						"휴... 이리오렴"</h1>
+			<img src = "c13.jpg" class = "comic"  style = "width:1400px; position:absolute; z-index:5; top:10600px; ">
+			<div class = "FB roundedF" style = "width:800px; height:300px; background-color:white; position:absolute; top:11420px; left:100px; text-align:center; ">
+				<h1 class = "baby lh80" style = "position:absolute; top:50px; left:150px; ">
+						 다음 주에 내가 6살이 되면 그때 꼭 <br> 양초를 준비해줘 </h1></div>
+			<div class = "FB roundedF" style = "width:600px; height:200px; background-color:white; position:absolute; top:11650px; right:20px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = "letter-spacing: 1px; position:absolute; top:50px;left:65px; ">
+						 그럴게. 다음 해에 꼭 구해줄게</h1></div>
+		</div>						
 	</div>
-	<div id = "container1_2">
-		<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; line-height:100px; position:absolute; top:2300px; left:200px; 
-			letter-spacing: 1.5px; ">
-					내가 천국에서 내려왔다. 천장을 따라.<br>
-					내가 엄마 몸 안에서 발로 차고는 담요 안에서 불쑥 튀어나와<br>
-					마침내 눈을 떴다.<br></h1>
-		<img src = "c4_2.jpg"  style = "width:700px; position: absolute; z-index:5; top:2800px; right:20px;
-										border:5px black solid;">
-		<img src = "c5_2.jpg" style = "width:1350px; position: absolute; z-index:5; top:3100px; left:20px; 
-										border:5px black solid;">		
-		<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; line-height:100px; position:absolute; top:3450px; left:300px; z-index:10; background-color:white; letter-spacing: 1.5px ">
-					그 때 엄마가 탯줄을 자르고는 내게 말했다.<br>
-					"안녕, 잭"</h1>
-		<img src = "c6.jpg"  style = "width:655px; position:absolute; z-index:5; top:3950px; border: 5px black solid; left:20px;">
-		<img src = "c6_2.jpg"  style = "width:655px; position:absolute; z-index:5; top:3950px; border: 5px black solid; left:700px;">
-		<img src = "c6_3.jpg"  style = "width:1400px; position:absolute; z-index:5; top:4400px; border: 5px black solid;">
-		<div style = "width:500px; height:200px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:4700px; left:100px; text-align:center; line-height:150px; z-index:10; ">
-			<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; 
-						 letter-spacing: 1.5px;">
-					 엄마 나 이제 5살이야!</h1></div>
+	<!---제 2막 --->
+	<div id = "container2">
+		<img src = "s2 c0.jpg" class = "comic" style = "width:1800px; position:absolute; z-index:5; top:100px;">
+		<div class = "FB roundedF" style = "width:400px; height:150px; background-color:white; position:absolute; top:400px; left:100px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = "position:absolute; top:25px;left:55px; ">
+						 저건 뭐.. 케이크야?</h1></div>
+		<div class = "FB roundedF" style = "width:600px; height:200px; background-color:white; position:absolute; top:600px; left:100px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = "position:absolute; top:25px;left:100px; ">
+						진작 말했으면 내가<br>
+						선물이라도 사다줬을텐데</h1></div>
+		<div class = "FB roundedF" style = "width:200px; height:100px; background-color:white; position:absolute; top:500px; right:100px; text-align:center; z-index:10; ">
+				<h1 class = "mom 1h60" style = "position:absolute; top:5px;left:80px; ">
+						네</h1></div>
+		<h1 class = "mom" style = "position:absolute; top:820px;left:350px; color:white; z-index:20">
+						자. 통조림 받아</h1>
+
+		<img src = "s2 c1.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:1150px; ;">
+		<img src = "s2 c2.jpg" class = "comic" style = "width:700px; position:absolute; z-index:5; top:2000px; right:20px;;">
+		<img src = "s2 c3.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:2500px; ">
+		<h1 class = "baby" style = "position:absolute; top:3350px; left:550px;  z-index:10;" >
+				이크. 눈이 마주쳐 버렸다..!</h1>
+		<img src = "s2 c4.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:3600px; ">
+		<h1 class="texteffect" style = "position:absolute; top:4050px; left:300px; z-index:20">
+						쿵!</h1>
+		<img src = "s2 c5_2.jpg" class = "comic" style = "width:1000px; position:absolute; z-index:5; top:4550px; ">
+		<h1 class = "mom" style = " line-height:120px; position:absolute; top:5300px; left:300px; z-index:10; ">
+						" 애가 안 자고 있는 것 같은데? "<br>
+						" 애 자요. "<br>
+						" ...아닌 것 같은데? "</h1>
+
+		<img src = "s2 c6_3.jpg" class = "comic" style = "width:1400px; position:absolute; z-index:5; top:5800px; ">
+		<img src = "s2 c6.jpg" class = "comic" style = "width:700px; position:absolute; z-index:5; top:6500px; right:20px; ">
+		<div class = "FB roundedF" style = "width:600px; height:100px; background-color:white; position:absolute; top:6750px; right:500px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = "position:absolute; top:5px;left:150px; ">
+						애기야 사탕 줄까?</h1></div>
+		<img src = "">
+		<h1 style = "font-family:'Noto Serif KR', cursive; font-size:80px; letter-spacing:1.5px; position:absolute; top:7500px; right: 400px; text-align:center;">"애 잔다니까요!!"</h1>
+		<img src = "s2 c6_2.jpg" class = "comic" style = "width:1000px; position: absolute; z-index:5; top:7800px; right:0px;">
+		<h1 class = "mom" style = "position:absolute; top:8400px; right:200px; z-index:20; ">"알겠다고! 히스테리 환자처럼 소리 지르지마!"</h1>
+		<img src ="s2 c7.jpg" class = "comic" style ="width:1400px; position:absolute; z-index:10; top:8600px; right:0;">
+		<img src ="s2 c8.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:9450px; left:0;">
+		<h1 class = "baby" style = " position :absolute; top:9750px; right:0; z-index:30;">	닉 아저씨...</h1>
+		<img src ="s2 c9.jpg" style ="width:1200px; position:absolute; z-index:10; top:10100px; right:0;">
+		<img src ="s2 c10.jpg" class = "comic" style ="width:1400px; position:absolute; z-index:10; top:10900px; right:0;">
+		<div class = "FB roundedF" style = "width:500px; height:150px; background-color:white; position:absolute; top:11800px; right:200px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = "position:absolute; top:25px;left:150px; ">
+						안녕, 아가야</h1></div>
+		<img src ="s2 c13.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:12200px; right:0;">
+		<img src ="s2 c12.jpg"style ="width:1000px; position:absolute; z-index:10; top:12800px; left:0;">	
+		<h1 style = "font-family: 'Noto Serif KR',cursive; font-size:100px; letter-spacing:1.5px; position:absolute; top:13000px; right:200px; text-align:center; z-index:30;"> 꽈-악 </h1>
+		<img src ="s2 c14.jpg" class = "comic" style ="width:1400px; position:absolute; z-index:10; top:13450px; left:0;">	
+		<div class = "FB roundedF" style = "width:1000px; height:250px; background-color:white; position:absolute; top:14350px; right:200px; text-align:center; z-index:10; ">
+				<h1 style = "font-family:'Noto Serif KR',cursive; font-size:80px; position:absolute; top:25px;left:150px; ">
+						내 아이에게 손대지마!</h1></div>
+		<div class = "FB roundedF" style = "width:1000px; height:250px; background-color:white; position:absolute; top:14550px; right:0px; text-align:center; z-index:10; ">
+				<h1 style = "font-family:'Noto Serif KR',cursive; font-size:80px; position:absolute; top:25px;left:150px; ">
+						아이에게서 떨어져!!</h1></div>
+		<img src ="s2 c15.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:15000px; right:0;">	
+		<img src ="s2 c16.jpg" style ="width:1400px; position:absolute; z-index:10; top:15650px; right:0;">
+		<div class = "FB roundedF" style = "width:1200px; height:250px; background-color:white; position:absolute; top:16500px; left:0px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = " position:absolute; top:35px;left:300px; ">
+						썅! 다시는 내 몸을 그딴식으로 건들거나,<br>
+						나에게 그딴식으로 말하면 죽여버릴거야.</h1></div>	
+		<h1 class = "mom" style = "position:absolute; top:16450px; right:0; z-index:20;">"내 아이에게...손 대지 마...""</h1>
+		<img src ="s2 c17.jpg" class = "comic" style ="width:1400px; position:absolute; z-index:10; top:16800px; right:0;">
+		<div class = "FB roundedF" style = "width:600px; height:250px; background-color:white; position:absolute; top:17700px; right:0px; text-align:center; z-index:10; ">
+				<h1 class = "mom lh60" style = " position:absolute; top:45px;left:100px; ">
+						저 아이가 어디서 나왔는지 <br>
+						생각해보라고.</h1></div>
+		<img src ="s2 c18.jpg" style ="width:1000px; position:absolute; z-index:10; top:18000px; right:0;">
+		<img src ="s2 c19.jpg" class ="comic" style ="width:1400px; position:absolute; z-index:10; top:18600px; right:0;">
 	</div>
-	<div id = "container1_3">
-		<img src = "c6_4.jpg"  style = "width:1400px; position:absolute; z-index:5; top:5220px; border: 5px black solid;">	
-		<img src = "c7.jpg"  style = "width:690px; position:absolute; z-index:5; top:6100px; border: 5px black solid;">	
-		<img src = "c8.jpg"  style = "width:690px; position:absolute; z-index:5; top:6100px; left:710px; border: 5px black solid;">		
-		<img src = "c10_2.jpg"  style = "width:1400px; position:absolute; z-index:5; top:6550px; border: 5px black solid;">
-		<img src = "c9.jpg"  style = "width:900px; position:absolute; z-index:5; top:7400px; border: 5px black solid; right:0px;">
+	<!---제 3막 --->
+	<div id = "container3">
+		<div style = "width:1400px; height:800px; position:absolute; top:50px; right:0px; background-color:gray; z-index:10;"></div>
+		<div class = "FB roundedF" style = "width:700px; height:200px; position:absolute; top: 300px; left:100px; text-align:center; z-index:50;">
+			<h1 class = "mom 1h80" style = "position:absolute; top: 25px; left:50px; ">잭, 어떻게 앨리스가 원더랜드에 가게 <br>
+			되었는지 아니?</h1></div>
+		<div class = "FB roundedF" style = "width:700px; height:200px; position:absolute; top: 500px; right:100px; text-align:center; z-index:50;">
+			<h1 class = "mom 1h80" style = "position:absolute; top: 50px; left:70px; ">앨리스가 깊은 구멍에 빠져 버렸어요! </h1></div>
+
+		<img src ="s3 c7.jpg" class ="comic" style ="width:1400px; position:absolute; z-index:10; top:900px; right:0;">
+		 <h1 class = "mom 1h80" style = "position:absolute; top:1800px; left:200px; text-align:center;">"맞아. 근데 엄마도 여기에서만 있지 않았어. 앨리스와 같았단다.<br> 난 조이라는 어린 여자애였고, 엄마 아빠와 같이 살았어."</h1>
+		 <h1 class = "mom 1h80" style = "position:absolute; top:2000px; left:500px; text-align:center;">"어디 살았는데요? TV 집?"</h1>
+
+		<img src ="s3 c10_1.jpg" style ="width:700px; position:absolute; z-index:10; top:2200px; left:100px;">
+		<h1 class = "mom 1h60" style = "position:absolute; top:2450px; right: 50px; z-index:30; ">
+				"아니. 잭. 진짜 집.<br> TV가 아니라. 내가 17살 때였지. <br>
+			나는 학교에서 집으로 걸어오고 있었어."</h1>
+		<h1 class = "baby" style = "position: absolute; top:3200px; left:300px; z-index:30;">  "난 어디있었는데?" </h1>
+		<img src ="s3 c10_2.jpg" style ="width:700px; position:absolute; z-index:10; top:2800px; right:100px;">
+		<img src ="s3 c10_1.jpg" style ="width:700px; position:absolute; z-index:10; top:3500px; left:50px;">
+		<h1 class = "mom 1h60" style = "position:absolute; top:3800px; right: 50px; z-index:30; ">
+				"넌 저기 하늘 위에.<br> 
+				하지만 어떤 남자가 자신의 개가 아픈 척을 햇어."</h1>
+		<img src ="s3 c10_2.jpg" style ="width:700px; position:absolute; z-index:10; top:4000px; right:100px;">
+		<h1 class = "baby" style = "position: absolute; top:4400px; left:500px; z-index:30;">  "누가 ?" </h1>
+			<h1 style = "font-family:'Noto Serif KR', cursive; font-size:80px; position:absolute; top:4780px; left:550px;"> " 늙은 닉 "</h1>
+		<img src ="s3 c8.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:5100px; right:200px;">
+			<h1  class ="mom lh80" style = " position:absolute; top:5700px; left:300px; text-align:center;"> " 우리는 모두 그를 늙은 닉이라고 불렀어.<br>
+			그는 그의 개가 아픈 시늉을 했고, 
+			<br> 그건 개가 아니었어. 그는 날 속이려고 연기한거야. "</h1>
+		<img src ="s3 c9.jpg" style ="width:850px; position:absolute; z-index:10; top:6100px; right:0px;">
+		<div class = "FB roundedF" style = "width:500px; height:200px; position:absolute; top:6600px; right:150px; z-index:30; background-color:white;">
+			<h1 class="baby" style = " position:absolute; top:30px; left:50px;"> 난 다른 이야기가 듣고싶어! </h1></div>
+		<img src ="s3 c12.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:6900px; right:200px;">
+			<h1 style = "font-family:'Noto Serif KR',cursive; font-size:50px; letter-spacing:1.5px; line-height:100px; position:absolute; top:7500px; right:50px; text-align:center;"> "아니. 이게 니가 들어야 할 진짜 이야기야.<br> 그는 날 정원 헛간에다 넣었어. 바로 여기.<br>이 방이 바로 헛간이야. 그는 문을 잠궜지.<br>유일하게 저 비밀번호를 아는 사람. 닉 아저씨가 전부야.<br>난 여기 7년을 갇혀지냈어. 무려  7년이라구" </h1>
+	<div class = "FB roundedF" style = "width:500px; height:200px; position:absolute; top:8050px; right:150px; z-index:30; background-color:white;">
+			<h1 style = " font-family:'Nanum Pen Script', cursive; font-size: 80px; position:absolute; top:5px; left:50px;"> 이 이야기 싫어! </h1></div>
+		<h1 style = "font-family:'Noto Serif KR',cursive; font-size:40px; letter-spacing:1.5px; line-height:80px; position:absolute; top:8300px; right:200px; text-align:center;"> "잭, 이 세상은 너무 커. 너무 커서 넌 믿지도 못할거야<br>그리고 이 방은 역겨운 부분 중 하나일 뿐이고. 넌 5살이니까<br>알아들을거야. 우리는 이대로 살 수 없단다.<br>니가 날 도와줘야해 " </h1>	
+		<img src ="s3 c12_2.jpg" style ="width:850px; position:absolute; z-index:10; top:8700px; right:0px;">	
 	</div>
-	<div id = "container1_4">
-		 <h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; line-height:80px; position:absolute; top:7600px; left:50px; z-index:10; background-color:white;letter-spacing: 1.5px ">
-					"...양초는?"</h1>
-		 <h1 style = "font-family:'Noto Serif KR', cursive; font-size:35px; line-height:80px; position:absolute; top:7700px; left:50px; z-index:10;
-		 	letter-spacing: 1px ">
-					"우리한테 양초는 없는거 알잖니"</h1>
-		<img src = "c11_3.jpg"  style = "width:495px; position:absolute; z-index:5; top:8350px; border: 5px black solid; left:0px;">
-		<img src = "c12.jpg"  style = "width:865px; position:absolute; z-index:5; top:8350px; border: 5px black solid; right:0px;">
-		<div style = "width:800px; height:300px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:8000px; left:300px; text-align:center; filter:drop-shadow(5px 5px 0 grey);  ">
-			<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; line-height:80px;letter-spacing: 1.5px; position:absolute; top:50px; left:50px; ">
-					 엄마가 진짜 생일 케이크 만들어 준다고 했잖아!<br> 그럼 불이 있어야지! </h1></div>
-		<div style = "width:500px; height:200px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:8750px; right:300px; text-align:center; z-index:10; ">
-			<h1 style = "font-family:'Noto Serif KR', cursive; font-size:35px; line-height:60px; letter-spacing:1px; position:absolute; top:20px;left:50px; ">
-					 잭. 양초 없어도 생일케이크<br>라는건 변하지 않아</h1></div>
-		<div style = "width:500px; height:200px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:8900px; right:0px; text-align:center; z-index:10; ">
-			<h1 style = "font-family:'Noto Serif KR', cursive; font-size:35px; line-height:60px;letter-spacing: 1px; position:absolute; top:20px;left:80px; ">
-					 그냥 이대로 생일 축하<br>하면 안될까?</h1></div>
-		<div style = "width:800px; height:300px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:9100px; left:300px; text-align:center; filter:drop-shadow(8px 8px 10px gray); line-height:150px; ">
-			<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:120px;">
-					 싫 어!!</h1></div>
+	<!---제 4막 --->
+	<div id = "container4">
+		<img src ="s3 c13.jpg" class = "comic" style ="width:800px; position:absolute; z-index:10; top:0px; right:0px;">	
+		<h1 class = "texteffect" style ="position:absolute; z-index:30; top:200px; left:0px;">"잭, 더 뻣뻣하게" </h1>
+		<img src ="s3 c14.jpg" style ="width:800px; position:absolute; z-index:10; top:550px; left:0px;">	
+		<img src ="s3 c16_2.jpg" style ="width:1000px; position:absolute; z-index:10; top:900px; right:-100px;">	
+		<h1 class = "texteffect" style ="position:absolute; z-index:30; top:1200px; right:300px;">삐리릭 </h1>
+		<img src ="s3 c18.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:1800px; left:0px;">
+		<div class = "FB roundedF" style = "width:500px; height:200px; position:absolute; top:2000px; right:0px; z-index:30; background-color:white;">
+			<h1 class="mom" style = " position:absolute; top:50px; left:150px;"> 서둘러...! </h1></div>
+		<img src ="s3 c17.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:2400px; right:0px;">
+		<h1 class = "mom" style="position:absolute; z-index:30; top:2850px; right:650px;">애가 아프다면서...</h1>
+		<img src ="s3 c19.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:3000px; left:0px;">
+		<div class = "FB roundedF" style = "width:400px; height:200px; position:absolute; top:3250px; right:0px; z-index:30; background-color:white;">
+			<h1 class = "mom" style = "position:absolute; top:50px; left:50px;"> 너, 뭐하는거야?</h1></div>
+		<img src ="s3 c20.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:3600px; left:0px;">
+		<div class = "FB roundedF" style = "width:600px; height:200px; position:absolute; top:3750px; right:0px; z-index:30; background-color:white;">
+			<h1 class = "mom" style = "position:absolute; top:20px; left:50px;">요 며칠 당신이 전기를 차단한<br>
+			탓에 내 아이가 죽었어요.</h1></div>
+		<img src ="s3 c21.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:4200px; right:0px;">
+		<div class = "FB roundedF" style = "width:600px; height:250px; position:absolute; top:4400px; left:200px; z-index:30; background-color:white;">
+			<h1 class = "mom" style="position:absolute; z-index:30; top:50px; left:120px;">이크, 진정해.<Br> 꽤나 심각했었나보군. </h1></div>
+		<h1 class = "mom" style="position:absolute; z-index:30; top:4300px; left:480px;">단순 감기인 줄 알았는데... </h1>
+		<img src ="s3 c23.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:4800px; left:0px;">
+		<h1 class = "mom" style="position:absolute; z-index:30; top:4800px; left:650px;">흐윽... 흑.. </h1>
+		<div class = "FB roundedF" style = "width:600px; height:250px; position:absolute; top:5000px; right:50px; z-index:30; background-color:white;">
+			<h1 class = "mom" style="position:absolute; z-index:30; top:50px; left:120px;">내 아이를 나무가<Br> 있는 곳에 묻어줘요. </h1></div>
+			<h1 class = "mom" style ="position:absolute; z-index:30; top:5250px; right:170px;">여긴 안돼요!</h1>
+		 <img src ="s3 c22.jpg" class = "comic" style ="width:1000px; position:absolute; z-index:10; top:5400px; left:0px;">
+			<h1 class = "mom" style="position:absolute; z-index:30; top:5800px; left:150px;">조심해요! </h1>
+		<img src = "s3 c25.jpg" style ="width:1400px; position:absolute; top:6000px; right:0px; z-index:30;">
+			<h1 class = "baby" style = "position:absolute; z-index:30; top:6100px; right:0px;">엄마...!</h1>
+		<img src = "s3 c24.jpg" class="comic" style = "width:1000px; position:absolute; z-index:10; top:6850px; right:0px;">
+		<img src = "s3 c27.jpg" class="comic" style = "width:1400px; position:absolute; z-index:10; top:7600px; right:0px;">
+		<img src = "s3 c28.jpg" class="comic" style = "width:1400px; position:absolute; z-index:10; top:8450px; right:0px;">
+		<img src = "s3 c30.jpg"  style = "width:1000px; position:absolute; z-index:10; top:9300px; right:0px;">
+		<img src = "s3 c30_2.jpg"  style = "width:1000px; position:absolute; z-index:10; top:9900px; right:0px;">	
+			<h1 class = "baby" style = "position:absolute; z-index:30; top:10100px; right:150px;">꿈틀</h1>
+		<img src = "s3 c31.jpg"  style = "width:1400px; position:absolute; z-index:10; top:10500px; right:0px;">
+		<img src = "s3 c32_2.jpg"  class = "comic" style = "width:1000px; position:absolute; z-index:10; top:11400px; left:0px;">
+		<img src = "s3 c34_2.jpg"  class = "comic" style = "width:1000px; position:absolute; z-index:10; top:11750px; right:0px;">
+		<img src = "s3 c33.jpg"  class = "comic" style = "width:1400px; position:absolute; z-index:10; top:12100px; right:0px;">
+		<img src = "s3 c35.jpg"  class = "comic" style = "width:1000px; position:absolute; z-index:10; top:13000px; right:200px;">
+		<img src = "s3 c36.jpg"  class = "comic" style = "width:700px; position:absolute; z-index:10; top:13600px; left:200px;">
+		<img src = "s3 c38.jpg"  style = "width:1400px; position:absolute; z-index:10; top:14200px; left:0px;">
+			<h1 class = "mom " style ="line-height:100px; position:absolute; z-index:30; top:15000px; left:250px; text-align:center;">잭은 두 번 덜컹거림이 있은 후,<br>달리는 차에서 곧장 뛰어내렸고, 경찰을 만나<br>구조 되었다. 잭이 가지고 있던 엄마의 충치 덕에 곧<br>조이도 구조되었고 몇 개월의 입원치료 후, 7년만에<br>집으로 돌아갈 수 있게 되었다.</h1>
+
+
+
+
 	</div>
-	<div id = "container1_5">
-		<img src = "c12_2.jpg"  style = "width:1400px; position:absolute; z-index:5; top:9500px; border: 5px black solid;">
-		<h1 style = "font-family:'Noto Serif KR', cursive; font-size:35px; line-height:80px; position:absolute; top:10400px; left:600px; z-index:10;
-		 	letter-spacing: 1px ">
-					"휴... 이리오렴"</h1>
-		<img src = "c13.jpg"  style = "width:1400px; position:absolute; z-index:5; top:10600px; border: 5px black solid;">
-		<div id = "1fb" style = "width:800px; height:300px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:11420px; left:100px; text-align:center; ">
-			<h1 style = "font-family:'Nanum Pen Script', cursive; font-size:50px; line-height:80px;letter-spacing: 1.5px; position:absolute; top:50px; left:150px; ">
-					 다음 주에 내가 6살이 되면 그때 꼭 <br> 양초를 준비해줘 </h1></div>
-		<div id = "1fb2" style = "width:600px; height:200px; border-radius:50%; border:5px solid black; background-color:white; position:absolute; top:11650px; right:20px; text-align:center; z-index:10; ">
-			<h1 style = "font-family:'Noto Serif KR', cursive; font-size:35px; line-height:60px;letter-spacing: 1px; position:absolute; top:50px;left:65px; ">
-					 그럴게. 다음 해에 꼭 구해줄게</h1></div>
-	</div>						
-</div>
 
-<script type="text/javascript"> 
-	window.onscroll=function(){
-		var t = document.documentElement.scrollTop;
-		moniter.innerHTML = t +"px";
-		if(t<2000){
-			document.getElementById("container1_1").style.animationPlayState = "running";
 
-		}else if(t<4000){
-			document.getElementById("container1_2").style.animationPlayState = "running";
 
-		}else if(t<6000){
-			document.getElementById("container1_3").style.animationPlayState = "running";
 
-		}else if(t<8000){
-			document.getElementById("container1_4").style.animationPlayState = "running";
 
- 		}else{
-		document.getElementById("container1_5").style.animationPlayState = "running";
- 		}
-	} 
 
-</script>
+	<script type="text/javascript"> 
+		window.onscroll=function(){
+			var t = document.documentElement.scrollTop;
+			moniter.innerHTML = t +"px";
+			if(t<2000){
+				document.getElementById("container1_1").style.animationPlayState = "running";
+				container1.style.backgroundColor = "red";
 
-</body>
-</html>
+			}else if(t<4000){
+				document.getElementById("container1_2").style.animationPlayState = "running";
+				container1.style.backgroundColor = "yellow";
+
+			}else if(t<6000){
+				document.getElementById("container1_3").style.animationPlayState = "running";
+
+			}else if(t<8000){
+				document.getElementById("container1_4").style.animationPlayState = "running";
+
+	 		}else{
+			document.getElementById("container1_5").style.animationPlayState = "running";
+	 		}
+		} 
+
+	</script>
+
+	</body>
+	</html>
